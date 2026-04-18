@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans | Spacix Cloud - Elite Minecraft Hosting India</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --glass: rgba(3, 0, 20, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            background-color: #030014;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            background-image: linear-gradient(rgba(3, 0, 20, 0.8), rgba(3, 0, 20, 0.9)), url('bg.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .display-font { font-family: 'Outfit', sans-serif; }
+        
+        .glass {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #2563eb 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .plan-tab.active {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-card:hover { transform: translateY(-5px); border-color: #2563eb; }
+    </style>
+</head>
+
+<body class="antialiased pb-20">
+
+    <nav class="w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/5 h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="spacix.jpg" alt="Spacix" class="w-10 h-10 rounded-lg">
+                <span class="text-2xl font-black display-font tracking-tighter text-white uppercase">SPACIX</span>
+            </a>
+            <a href="index.html" class="text-sm font-bold text-gray-400 hover:text-white transition uppercase tracking-widest">← Back to Home</a>
+        </div>
+    </nav>
+
+    <header class="pt-20 pb-10 text-center">
+        <h1 class="text-5xl md:text-7xl font-black display-font mb-4 uppercase">Choose Your <span class="gradient-text">Power</span></h1>
+        <p class="text-gray-400 font-medium">Nodes located in Delhi | Mumbai | Noida</p>
+    </header>
+
+    <div class="max-w-3xl mx-auto px-6 mb-16 flex flex-wrap justify-center gap-4">
+        <button onclick="showCategory('budget')" id="btn-budget" class="plan-tab active glass px-8 py-3 rounded-xl font-bold transition">Budget Plans</button>
+        <button onclick="showCategory('performance')" id="btn-performance" class="plan-tab glass px-8 py-3 rounded-xl font-bold transition text-gray-400">Performance Plans</button>
+        <button onclick="showCategory('hytale')" id="btn-hytale" class="plan-tab glass px-8 py-3 rounded-xl font-bold transition text-gray-400">Hytale Plans</button>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div id="cat-budget" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Grass Plan</h3>
+                <div class="text-4xl font-black mb-6 text-blue-500">₹70<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 4GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 100% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 10GB DISK</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 1x Cloud Backup</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 1x Database</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-white text-black font-black rounded-xl hover:bg-blue-500 hover:text-white transition">ORDER NOW</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Stone Plan</h3>
+                <div class="text-4xl font-black mb-6 text-blue-500">₹100<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 6GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 120% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 20GB DISK</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 1x Cloud Backup</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 2x Database</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-white text-black font-black rounded-xl hover:bg-blue-500 hover:text-white transition">ORDER NOW</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Iron Plan</h3>
+                <div class="text-4xl font-black mb-6 text-blue-500">₹250<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 16GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 200% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 30GB DISK</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 2x Cloud Backup</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 3x Database</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-white text-black font-black rounded-xl hover:bg-blue-500 hover:text-white transition">ORDER NOW</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-blue-500/50 lg:col-span-1">
+                <h3 class="text-3xl font-black display-font mb-2">Netherite Plan</h3>
+                <div class="text-4xl font-black mb-6 text-orange-500">₹1090<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 64GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 550% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 100GB DISK</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 5x Cloud Backup</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 5x Database</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-700 transition">ELITE ORDER</a>
+            </div>
+        </div>
+
+        <div id="cat-performance" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2 uppercase">Standard</h3>
+                <div class="text-4xl font-black mb-6 text-emerald-500">₹50<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 4GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 100% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 10GB SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 5x Backup & Ports</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-white text-black font-black rounded-xl hover:bg-emerald-500 transition">ORDER NOW</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2 uppercase">Hammer</h3>
+                <div class="text-4xl font-black mb-6 text-emerald-500">₹150<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 12GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 350% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 30GB SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 10x Backup & Ports</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-white text-black font-black rounded-xl hover:bg-emerald-500 transition">ORDER NOW</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-orange-500/30">
+                <h3 class="text-3xl font-black display-font mb-2 uppercase text-orange-400">Heart Plan</h3>
+                <div class="text-4xl font-black mb-6 text-orange-400">₹450<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 48GB RAM</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 600% CPU</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 600GB SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> MAX Backups & Ports</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-orange-600 text-white font-black rounded-xl hover:bg-orange-700 transition">ELITE ORDER</a>
+            </div>
+        </div>
+
+        <div id="cat-hytale" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Wheat (Hytale)</h3>
+                <div class="text-4xl font-black mb-6 text-purple-500">₹259<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 6GB RAM DDR4</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 200% CPU [AMD Epyc]</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 25GB NVMe SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> Full Game Panel Access</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-purple-600 text-white font-black rounded-xl hover:bg-purple-700 transition">RESERVE SLOT</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Carrot (Hytale)</h3>
+                <div class="text-4xl font-black mb-6 text-purple-500">₹359<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 8GB RAM DDR4</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 250% CPU [AMD Epyc]</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 40GB NVMe SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> Full Game Panel Access</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-purple-600 text-white font-black rounded-xl hover:bg-purple-700 transition">RESERVE SLOT</a>
+            </div>
+            <div class="glass p-8 rounded-[2rem] hover-card border-white/5">
+                <h3 class="text-3xl font-black display-font mb-2">Cabbage (Hytale)</h3>
+                <div class="text-4xl font-black mb-6 text-purple-500">₹449<span class="text-sm text-gray-500 font-normal">/mo</span></div>
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-center gap-2"><span>✔</span> 10GB RAM DDR4</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 300% CPU [AMD Epyc]</li>
+                    <li class="flex items-center gap-2"><span>✔</span> 50GB NVMe SSD</li>
+                    <li class="flex items-center gap-2"><span>✔</span> Full Game Panel Access</li>
+                </ul>
+                <a href="#" class="block text-center py-4 bg-purple-600 text-white font-black rounded-xl hover:bg-purple-700 transition">RESERVE SLOT</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-24 py-16 border-t border-white/5 bg-black/80">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <img src="spacix.jpg" class="w-16 h-16 rounded-2xl mb-6 opacity-80" alt="Spacix Cloud">
+            <p class="text-white text-lg font-black display-font tracking-widest uppercase mb-4">SPACIX CLOUD</p>
+            <div class="flex space-x-8 mb-8 text-gray-500 text-sm font-bold uppercase tracking-widest">
+                <a href="#" class="hover:text-blue-500 transition">Terms</a>
+                <a href="#" class="hover:text-blue-500 transition">Privacy</a>
+                <a href="https://discord.gg/DCYm55ZHM9" class="hover:text-blue-500 transition">Support</a>
+            </div>
+            <p class="text-gray-600 text-xs text-center font-bold uppercase tracking-[0.3em]">
+                &copy; 2026 Spacix Cloud India. Dominating The Market.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function showCategory(cat) {
+            // Hide all
+            document.getElementById('cat-budget').classList.add('hidden');
+            document.getElementById('cat-performance').classList.add('hidden');
+            document.getElementById('cat-hytale').classList.add('hidden');
+            
+            // Show selected
+            document.getElementById('cat-' + cat).classList.remove('hidden');
+            document.getElementById('cat-' + cat).classList.add('grid');
+
+            // Toggle Button styles
+            const btns = ['budget', 'performance', 'hytale'];
+            btns.forEach(b => {
+                const btn = document.getElementById('btn-' + b);
+                btn.classList.remove('active', 'text-white');
+                btn.classList.add('text-gray-400');
+            });
+            
+            const activeBtn = document.getElementById('btn-' + cat);
+            activeBtn.classList.add('active', 'text-white');
+            activeBtn.classList.remove('text-gray-400');
+        }
+    </script>
+</body>
+</html>
